@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>week-2</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); overflow: auto; background-color: rgb(40, 44, 52); }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(124, 135, 156); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(124, 135, 156); border-color: rgb(75, 83, 98); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top-width: 2px; border-top-style: dashed; border-top-color: rgb(75, 83, 98); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(75, 83, 98); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); background-color: rgb(58, 63, 75); }
+.markdown-preview[data-use-github-style] { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .horizontal-scrollbar { visibility: visible; }
+.pos_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.sans {
+  font-family: "HelveticaNeue", Helvetica, Verdana, Arial, sans-serif;
+}
+.monospace {
+  font-family: Menlo, "Deja Vu Sans Mono", Consolas, monospace;
+}
+#toc {
+  background-color: #f5f5f5;
+  padding: 0.5em 1em;
+  width: 12em;
+}
+.a_nocolor a {
+  color: inherit;
+}
+.a_stealth a {
+  color: inherit;
+}
+.a_stealth a,
+.a_stealth a:hover {
+  text-decoration: none;
+}
+.a_hover a {
+  text-decoration: none;
+}
+.a_hover a:hover {
+  text-decoration: underline;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+hr.separator {
+  padding-bottom: 2em;
+}
+div.separator {
+  padding-bottom: 4em;
+}
+.dropdown:hover > ul.dropdown-menu {
+  display: block;
+}
+.dropdown ul.dropdown-menu {
+  margin-top: -1px;
+}
+.user-color-square {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px 1px 2px;
+  vertical-align: middle;
+  border: 1px solid rgba(96, 96, 96, 0.5);
+  opacity: 0.6;
+}
+input.autocomplete {
+  margin-bottom: 0;
+  width: 20em;
+}
+ul.autocomplete_results {
+  border: 1px solid #bebebe;
+  list-style: none;
+  margin-top: -2px;
+  margin-left: 0;
+  padding-left: 0;
+}
+ul.autocomplete_results li {
+  cursor: pointer;
+  margin: 2px 0 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 2px 2px 2px 4px;
+}
+ul.autocomplete_results li:first-child {
+  padding-top: 4px;
+}
+ul.autocomplete_results li:last-child {
+  padding-bottom: 4px;
+}
+ul.autocomplete_results li:hover,
+ul.autocomplete_results li.selected {
+  color: #eaebed;
+  background-color: #353a4f;
+}
+.workspace-wizard {
+  text-align: center;
+  font-size: 15px;
+}
+.workspace-wizard a {
+  text-decoration: underline;
+  color: #dd0000;
+}
+.workspace-wizard .wizard-section {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border: 0px solid #ededed;
+  border-bottom-width: 1px;
+}
+.workspace-wizard .wizard-section-no-border {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border: 0px solid #ededed;
+  border-bottom-width: 1px;
+  border: 0;
+}
+.workspace-wizard table,
+.workspace-wizard label {
+  font-size: 15px;
+}
+.workspace-wizard label {
+  display: inline-block;
+  margin-right: 10px;
+}
+.wizard-button-bar {
+  margin-top: 20px;
+  text-align: right;
+}
+#edit-perms-content-wizard .everyone-can {
+  text-align: center;
+}
+#edit-perms-content-wizard .everyone-can table {
+  margin: 0 auto;
+}
+#edit-perms-content-wizard td {
+  padding: 5px;
+  text-align: left;
+}
+#edit-perms-content-wizard td label {
+  font-size: 12px;
+}
+#edit-perms-content-wizard #all-perms-content label {
+  font-size: 12px;
+}
+#edit-perms-content-wizard input[type=text] {
+  border: 1px solid #afafaf;
+  width: 200px;
+  outline: none;
+  box-shadow: none;
+}
+#edit-perms-content-wizard input[type=text]:focus {
+  box-shadow: none;
+  outline: none;
+}
+#edit-perms-content-wizard .autocomplete-content {
+  position: relative;
+}
+#edit-perms-content-wizard .autocomplete-content .edit-perms-autocomplete-results {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  background-color: #FFF;
+  border: 1px solid #afafaf;
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+@-webkit-keyframes floobits-highlight-animation {
+  0% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.floobits a {
+  outline: none !important;
+}
+.floobits-highlight-dark_black .region {
+  background-color: black;
+  opacity: .3;
+}
+.floobits-border-dark_black .region {
+  background-color: black;
+  -webkit-animation: floobits-highlight-animation 2s ease 1;
+  opacity: 0;
+}
+.floobits-highlight-dark_black.line-number:before {
+  border-right: 2px solid black;
+  content: " ";
+}
+.floobits-highlight-dark_blue .region {
+  background-color: blue;
+  opacity: .3;
+}
+.floobits-border-dark_blue .region {
+  background-color: blue;
+  -webkit-animation: floobits-highlight-animation 2s ease 1;
+  opacity: 0;
+}
+.floobits-highlight-dark_blue.line-number:before {
+  border-right: 2px solid blue;
+  content: " ";
+}
+.floobits-highlight-dark_darkblue .region {
+  background-color: darkblue;
+  opacity: .3;
+}
+.floobits-border-dark_darkblue .region {
+  background-color: darkblue;
+  -webkit-animation: floobits-highlight-animation 2s ease 1;
+  opacity: 0;
+}
+.floobits-highlight-dark_darkblue.line-number:before {
+  border-right: 2px solid darkblue;
+  content: " ";
+}
+.floobits-highlight-dark_fuchsia .region {
+  background-color: fuchsia;
+  opacity: .3;
+}
+.floobits-border-dark_fuchsia .region {
+  background-color: fuchsia;
+  -webkit-animation: floobits-highlight-animation 2s ease 1;
+  opacity: 0;
+}
+.floobits-highlight-dark_fuchsia.line-number:before {
+  border-right: 2px solid fuchsia;
+  content: " ";
+}
+.floobits-highlight-dark_gray .region {
+  background-color: gray;
+  opacity: .3;
+}
+.floobits-border-dark_gray .region {
+  background-color: gray;
+  -webkit-animation: floobits-highlight-animation 2s ease 1;
+  opacity: 0;
+}
+.floobits-highlight-dark_gray.line-number:before {
+  border-right: 2px solid gray;
+  content: " ";
+}
+.floobits-highlight-dark_green .region {
+  background-color: green;
+  opacity: .3;
+}
+.floobits-border-dark_green .region {
+  background-color: green;
+  -webkit-animation: floobits-highlight-animation 2s ease 1;
+  opacity: 0;
+}
+.floobits-highlight-dark_green.line-number:before {
+  border-right: 2px solid green;
+  content: " ";
+}
+.floobits-highlight-dark_greenyellow .region {
+  background-color: greenyellow;
+  opacity: .3;
+}
+.floobits-border-dark_greenyellow .region {
+  background-color: greenyellow;
+  -webkit-animation: floobits-highlight-animation 2s ease 1;
+  opacity: 0;
+}
+.floobits-highlight-dark_greenyellow.line-number:before {
+  border-right: 2px solid greenyellow;
+  content: " ";
+}
+.floobits-highlight-dark_indigo .region {
+  background-color: indigo;
+  opacity: .3;
+}
+.floobits-border-dark_indigo .region {
+  background-color: indigo;
+  -webkit-animation: floobits-highlight-animation 2s ease 1;
+  opacity: 0;
+}
+.floobits-highlight-dark_indigo.line-number:before {
+  border-right: 2px solid indigo;
+  content: " ";
+}
+.floobits-highlight-dark_lime .region {
+  background-color: lime;
+  opacity: .3;
+}
+.floobits-border-dark_lime .region {
+  background-color: lime;
+  -webkit-animation: floobits-highlight-animation 2s ease 1;
+  opacity: 0;
+}
+.floobits-highlight-dark_lime.line-number:before {
+  border-right: 2px solid lime;
+  content: " ";
+}
+.floobits-highlight-dark_magenta .region {
+  background-color: magenta;
+  opacity: .3;
+}
+.floobits-border-dark_magenta .region {
+  background-color: magenta;
+  -webkit-animation: floobits-highlight-animation 2s ease 1;
+  opacity: 0;
+}
+.floobits-highlight-dark_magenta.line-number:before {
+  border-right: 2px solid magenta;
+  content: " ";
+}
+.floobits-highlight-dark_maroon .region {
+  background-color: maroon;
+  opacity: .3;
+}
+.floobits-border-dark_maroon .region {
+  background-color: maroon;
+  -webkit-animation: floobits-highlight-animation 2s ease 1;
+  opacity: 0;
+}
+.floobits-highlight-dark_maroon.line-number:before {
+  border-right: 2px solid maroon;
+  content: " ";
+}
+.floobits-highlight-dark_midnightblue .region {
+  background-color: midnightblue;
+  opacity: .3;
+}
+.floobits-border-dark_midnightblue .region {
+  background-color: midnightblue;
+  -webkit-animation: floobits-highlight-animation 2s ease 1;
+  opacity: 0;
+}
+.floobits-highlight-dark_midnightblue.line-number:before {
+  border-right: 2px solid midnightblue;
+  content: " ";
+}
+.floobits-highlight-dark_orange .region {
+  background-color: orange;
+  opacity: .3;
+}
+.floobits-border-dark_orange .region {
+  background-color: orange;
+  -webkit-animation: floobits-highlight-animation 2s ease 1;
+  opacity: 0;
+}
+.floobits-highlight-dark_orange.line-number:before {
+  border-right: 2px solid orange;
+  content: " ";
+}
+.floobits-highlight-dark_orangered .region {
+  background-color: orangered;
+  opacity: .3;
+}
+.floobits-border-dark_orangered .region {
+  background-color: orangered;
+  -webkit-animation: floobits-highlight-animation 2s ease 1;
+  opacity: 0;
+}
+.floobits-highlight-dark_orangered.line-number:before {
+  border-right: 2px solid orangered;
+  content: " ";
+}
+.floobits-highlight-dark_purple .region {
+  background-color: purple;
+  opacity: .3;
+}
+.floobits-border-dark_purple .region {
+  background-color: purple;
+  -webkit-animation: floobits-highlight-animation 2s ease 1;
+  opacity: 0;
+}
+.floobits-highlight-dark_purple.line-number:before {
+  border-right: 2px solid purple;
+  content: " ";
+}
+.floobits-highlight-dark_red .region {
+  background-color: red;
+  opacity: .3;
+}
+.floobits-border-dark_red .region {
+  background-color: red;
+  -webkit-animation: floobits-highlight-animation 2s ease 1;
+  opacity: 0;
+}
+.floobits-highlight-dark_red.line-number:before {
+  border-right: 2px solid red;
+  content: " ";
+}
+.floobits-highlight-dark_teal .region {
+  background-color: teal;
+  opacity: .3;
+}
+.floobits-border-dark_teal .region {
+  background-color: teal;
+  -webkit-animation: floobits-highlight-animation 2s ease 1;
+  opacity: 0;
+}
+.floobits-highlight-dark_teal.line-number:before {
+  border-right: 2px solid teal;
+  content: " ";
+}
+.floobits-highlight-dark_yellow .region {
+  background-color: yellow;
+  opacity: .3;
+}
+.floobits-border-dark_yellow .region {
+  background-color: yellow;
+  -webkit-animation: floobits-highlight-animation 2s ease 1;
+  opacity: 0;
+}
+.floobits-highlight-dark_yellow.line-number:before {
+  border-right: 2px solid yellow;
+  content: " ";
+}
+floobits-conflicts div {
+  padding: 10px;
+}
+input.floobits-submit {
+  color: black;
+  min-width: 125px;
+  content: 'Select Directory';
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  float: right;
+}
+
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+
+pre.editor-colors,
+.host {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line,
+.host .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible,
+.host .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor,
+.host .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region,
+.host .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region,
+.host .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character,
+.host .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide,
+.host .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide,
+.host .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .gutter .line-number,
+.host .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line,
+.host .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #2c313a;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection,
+.host .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right,
+.host .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before,
+.host .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after,
+.host .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+.host .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+.host .gutter .line-number:after,
+pre.editor-colors .fold-marker:after,
+.host .fold-marker:after {
+  color: #abb2bf;
+}
+.comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.entity.name.type {
+  color: #e5c07b;
+}
+.entity.other.inherited-class {
+  color: #98c379;
+}
+.keyword {
+  color: #c678dd;
+}
+.keyword.control {
+  color: #c678dd;
+}
+.keyword.operator {
+  color: #abb2bf;
+}
+.keyword.other.special-method {
+  color: #61afef;
+}
+.keyword.other.unit {
+  color: #d19a66;
+}
+.storage {
+  color: #c678dd;
+}
+.storage.type.annotation,
+.storage.type.primitive {
+  color: #c678dd;
+}
+.storage.modifier.package,
+.storage.modifier.import {
+  color: #abb2bf;
+}
+.constant {
+  color: #d19a66;
+}
+.constant.variable {
+  color: #d19a66;
+}
+.constant.character.escape {
+  color: #56b6c2;
+}
+.constant.numeric {
+  color: #d19a66;
+}
+.constant.other.color {
+  color: #56b6c2;
+}
+.constant.other.symbol {
+  color: #56b6c2;
+}
+.variable {
+  color: #e06c75;
+}
+.variable.interpolation {
+  color: #be5046;
+}
+.variable.parameter {
+  color: #abb2bf;
+}
+.string {
+  color: #98c379;
+}
+.string.regexp {
+  color: #56b6c2;
+}
+.string.regexp .source.ruby.embedded {
+  color: #e5c07b;
+}
+.string.other.link {
+  color: #e06c75;
+}
+.punctuation.definition.comment {
+  color: #5c6370;
+}
+.punctuation.definition.method-parameters,
+.punctuation.definition.function-parameters,
+.punctuation.definition.parameters,
+.punctuation.definition.separator,
+.punctuation.definition.seperator,
+.punctuation.definition.array {
+  color: #abb2bf;
+}
+.punctuation.definition.heading,
+.punctuation.definition.identity {
+  color: #61afef;
+}
+.punctuation.definition.bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.punctuation.definition.italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.punctuation.section.embedded {
+  color: #be5046;
+}
+.punctuation.section.method,
+.punctuation.section.class,
+.punctuation.section.inner-class {
+  color: #abb2bf;
+}
+.support.class {
+  color: #e5c07b;
+}
+.support.type {
+  color: #56b6c2;
+}
+.support.function {
+  color: #56b6c2;
+}
+.support.function.any-method {
+  color: #61afef;
+}
+.entity.name.function {
+  color: #61afef;
+}
+.entity.name.class,
+.entity.name.type.class {
+  color: #e5c07b;
+}
+.entity.name.section {
+  color: #61afef;
+}
+.entity.name.tag {
+  color: #e06c75;
+}
+.entity.other.attribute-name {
+  color: #d19a66;
+}
+.entity.other.attribute-name.id {
+  color: #61afef;
+}
+.meta.class {
+  color: #e5c07b;
+}
+.meta.class.body {
+  color: #abb2bf;
+}
+.meta.method-call,
+.meta.method {
+  color: #abb2bf;
+}
+.meta.definition.variable {
+  color: #e06c75;
+}
+.meta.link {
+  color: #d19a66;
+}
+.meta.require {
+  color: #61afef;
+}
+.meta.selector {
+  color: #c678dd;
+}
+.meta.separator {
+  background-color: #373b41;
+  color: #abb2bf;
+}
+.meta.tag {
+  color: #abb2bf;
+}
+.none {
+  color: #abb2bf;
+}
+.invalid.deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.invalid.illegal {
+  color: #ffffff !important;
+  background-color: #e05252 !important;
+}
+.markup.bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.markup.changed {
+  color: #c678dd;
+}
+.markup.deleted {
+  color: #e06c75;
+}
+.markup.italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.markup.heading .punctuation.definition.heading {
+  color: #61afef;
+}
+.markup.inserted {
+  color: #98c379;
+}
+.markup.list {
+  color: #e06c75;
+}
+.markup.quote {
+  color: #d19a66;
+}
+.markup.raw {
+  color: #98c379;
+}
+.source.cs .keyword.operator {
+  color: #c678dd;
+}
+.source.css .property-name,
+.source.css .property-value {
+  color: #828997;
+}
+.source.css .property-name.support,
+.source.css .property-value.support {
+  color: #abb2bf;
+}
+.source.gfm .markup {
+  -webkit-font-smoothing: auto;
+}
+.source.gfm .markup.heading {
+  color: #e06c75;
+}
+.source.gfm .markup.link {
+  color: #c678dd;
+}
+.source.gfm .link .entity {
+  color: #61afef;
+}
+.source.ini .keyword.other.definition.ini {
+  color: #e06c75;
+}
+.source.java .storage.modifier.import {
+  color: #e5c07b;
+}
+.source.java .storage.type {
+  color: #e5c07b;
+}
+.source.java-properties .meta.key-pair {
+  color: #e06c75;
+}
+.source.java-properties .meta.key-pair > .punctuation {
+  color: #abb2bf;
+}
+.source.json .meta.structure.dictionary.json > .string.quoted.json {
+  color: #e06c75;
+}
+.source.json .meta.structure.dictionary.json > .string.quoted.json > .punctuation.string {
+  color: #e06c75;
+}
+.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json,
+.source.json .meta.structure.array.json > .value.json > .string.quoted.json,
+.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json > .punctuation,
+.source.json .meta.structure.array.json > .value.json > .string.quoted.json > .punctuation {
+  color: #98c379;
+}
+.source.json .meta.structure.dictionary.json > .constant.language.json,
+.source.json .meta.structure.array.json > .constant.language.json {
+  color: #56b6c2;
+}
+.source.ruby .constant.other.symbol > .punctuation {
+  color: inherit;
+}
+.source.python .keyword.operator.logical.python {
+  color: #c678dd;
+}
+.source.python .variable.parameter {
+  color: #d19a66;
+}
+</style>
+  </head>
+  <body class='markdown-preview'><h1 id="week-2">Week 2</h1>
+<h3 id="warning-cultural-discussion-part-1-due-wednesday-jan-6th-">WARNING: Cultural Discussion: Part 1 DUE WEDNESDAY, JAN. 6th!!!</h3>
+<h4 id="due-date-monday-jan-11th-at-10-00am-pst">DUE DATE: Monday, Jan. 11th at 10:00am PST</h4>
+<hr>
+<p><strong><a href="https://devbootcamp.instructure.com/courses/23/pages/week-2-html?module_item_id=14851">Week 2: HTML</a></strong></p>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Suggested off-site reading/book</strong>
+
+</label><ul>
+<li><a href="http://www.htmlandcssbook.com/">HTML/CSS</a></li>
+<li><a href="https://devbootcamp.instructure.com/courses/23/announcements/1691">Recommended Books</a></li>
+</ul></li>
+</ul>
+<hr>
+<p><strong><a href="https://devbootcamp.instructure.com/courses/23/discussion_topics/1730?module_item_id=14852">Week 2 Peer Pairing Scheduler</a></strong></p>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Sign up for 2 peer pairing sessions with other students, by posting/replying on this assignment page</strong>
+
+</label><ul>
+<li>Use this format - <strong>[Tuesday, October 20 at 8:00pm PST] 2.6 First HTML Page</strong></li>
+</ul></li>
+</ul>
+<hr>
+<p><strong>Videos</strong></p>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="https://devbootcamp.instructure.com/courses/23/modules/items/14854">Mandatory: The Critical Inner Voice</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+  <a href="https://talks.devbootcamp.com/introduction-to-html">Optional: Introduction to HTML</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+  <a href="https://talks.devbootcamp.com/html-a-primer">Optional: HTML: A Primer</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+  <a href="https://talks.devbootcamp.com/design-stuffs-1">Optional: Design Stuffs</a>
+</label></li>
+</ul>
+<hr>
+<p><strong><a href="https://devbootcamp.instructure.com/courses/23/assignments/2829?module_item_id=14859">2.1 Week 1 Peer Reviews</a></strong></p>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Watch <a href="https://player.vimeo.com/video/74966150">How-To Peer Review Video</a></strong>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Complete the 7 assigned peer reviews</strong>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   (1) <a href="https://devbootcamp.instructure.com/courses/23/assignments/2738?module_item_id=14553">1.1 - Think About Time</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   (1) <a href="https://devbootcamp.instructure.com/courses/23/assignments/2739?module_item_id=14554">1.2 - The Command Line</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   (1) <a href="https://devbootcamp.instructure.com/courses/23/assignments/2740?module_item_id=14555">1.3 - Introduction to Version Control</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   (2) <a href="https://devbootcamp.instructure.com/courses/23/assignments/2741?module_item_id=14556">1.4 - Create, Clone, and Fork Repositories</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   (2) <a href="https://devbootcamp.instructure.com/courses/23/assignments/2742?module_item_id=14558">1.5 - Tracking Changes</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Submit 3-5 sentences on what you learned from reading and reviewing your peers&#39; submissions/reflections</strong>
+</label></li>
+</ul>
+<hr>
+<p><strong><a href="https://devbootcamp.instructure.com/courses/23/discussion_topics/1732?module_item_id=14860">2.2 Cultural Discussion</a></strong></p>
+<p><strong>WARNING: Part 1 of this assignment is due WEDNESDAY, JANUARY 6th</strong></p>
+<h4 id="part-1-">PART 1:</h4>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Create a post in the discussion for this assignment admitting to some of your fears related to attending DevBootcamp.
+</label></li>
+</ul>
+<h4 id="part-2-">PART 2:</h4>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Create a post in the discussion for this assignment admitting to some of your fears related to attending DevBootcamp.
+</label></li>
+</ul>
+<hr>
+<p><strong><a href="https://devbootcamp.instructure.com/courses/23/assignments/2830?module_item_id=14861">2.3 Introduction to Design and Site Planning</a></strong></p>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Required Reading</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://www.idesignstudios.com/blog/web-design/phases-web-design-development-process/#.UxuuUuddUtU">6 Phases of Web Design and Development Process</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://www.smashingmagazine.com/2010/10/05/what-is-user-experience-design-overview-tools-and-resources/">What is User Experience Design?</a>
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Recommended Reading</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://www.smashingmagazine.com/2011/08/24/design-solving-problems/">Design is about Solving Problems</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="https://speakerdeck.com/lara/designing-for-performance">Designing for Performance</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://www.cognition.happycog.com/article/why-developers-need-to-learn-design">Why Developers Need to Learn Design</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://webdesign.tutsplus.com/articles/planning-a-design-project--webdesign-13277">Planning a Design Project</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://www.bigseadesign.com/web-design/planning-and-scheming-how-we-start-a-web-design-project">Planning and Scheming: How We Start a Design Project</a>
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Gather Information</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Your picture
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Your contact information
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Link to your blog
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   About me
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Your projects
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Anything else you want to include
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Create Site Map</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Save as phase-0/week-2/imgs/site-map.png</strong>
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Reflection</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Save as phase-0/week-2/design-reflection.md</strong>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What are the 6 Phases of Web Design?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What is your site&#39;s primary goal or purpose? What kind of content will your site feature?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What is your target audience&#39;s interests and how do you see your site addressing them?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What is the primary &quot;action&quot; the user should take when coming to your site?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Do you want them to search for information, contact you, or see your portfolio? It&#39;s ok to have several actions at once, or different actions for different kinds of visitors.
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What are the main things someone should know about design and user experience?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What is user experience design and why is it valuable?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Which parts of the challenge did you find tedious?
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong><a href="../tutorials/how-to-push-to-github.md">Push to GitHub</a></strong>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Submit link to your design-reflection.md</strong>
+</label></li>
+</ul>
+<hr>
+<p><strong><a href="https://devbootcamp.instructure.com/courses/23/assignments/2831?module_item_id=14862">2.4 Wireframing</a></strong></p>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Required Reading</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://webdesign.tutsplus.com/tutorials/a-beginners-guide-to-wireframing--webdesign-7399">A Beginner&#39;s Guide to Wireframing</a>
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Create wireframe for your site&#39;s index</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Links to your social networks (Twitter, Facebook, LinkedIn, Quora, GitHub etc.)
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Your picture
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Link to your blog/index.html page (this is where your links will be displayed)
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Link to &quot;Contact,&quot; &quot;About me,&quot; &quot;Projects,&quot; and &quot;Resume&quot; (to be added in future weeks)
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Save as phase-0/week-2/imgs/wireframe-index.png</strong>
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Create wireframe for your blog index</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Save as phase-0/week-2/imgs/wireframe-blog-index.png</strong>
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Reflection</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Save as phase-0/week-2/wireframe-reflection.md</strong>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What is a wireframe?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What are the benefits of wireframing?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Did you enjoy wireframing your site?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Did you revise your wireframe or stick with your first idea?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What questions did you ask during this challenge? What resources did you find to help you answer them?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Which parts of the challenge did you enjoy and which parts did you find tedious?
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Submit link to your wireframe-reflection.md</strong>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Additional Resources</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://uxdesign.smashingmagazine.com/2012/08/29/beyond-wireframing-real-life-ux-design-process/">Beyond Wireframing: Real Life UX Design Process</a>
+</label></li>
+</ul></li>
+</ul>
+<hr>
+<p><strong><a href="https://devbootcamp.instructure.com/courses/23/pages/2-dot-5-introduction-to-html-medium-long?module_item_id=14863">2.5 Introduction to HTML</a></strong></p>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Complete HTML track at <a href="www.codecademy.com">Codecademy.com</a></strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   HTML Basics
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   HTML Basics II (sections 1-6, skip Styling section)
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   HTML Basics III
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Additional Resources</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document">Sections and Outlines of an HTML Document</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://html5doctor.com/outlines/">HTML5 outlines</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document">HTML5 Style Guides</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://skillcrush.com/wp-content/uploads/2012/06/HTML-Cheatsheet-Skillcrush.pdf">HTML tag cheatsheet</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://learn.shayhowe.com/html-css/">Beginners guide to HTML and CSS</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://teamtreehouse.com/library/build-a-simple-website">Build a simple website</a>
+</label></li>
+</ul></li>
+</ul>
+<hr>
+<p><strong><a href="https://devbootcamp.instructure.com/courses/23/assignments/2832?module_item_id=14865">2.6 First HTML Page - Mandatory Pairing Assignment</a></strong></p>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Create HTML only clone of <a href="www.Berkshire-Hathaway.com">Berkshire-Hathaway.com</a></strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Save as phase-0/week-2/berkshire/my-berkshire-site.html</strong>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Save Geico image to phase-o/week-2/imgs</strong>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Add reflection as a comment in HTML
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Reflection</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What was it like to translate your previous learning with HTML into an actual site?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   How was it researching and using semantic HTML5 elements?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   How did you do at keeping to best practices (i.e. no formatting in the HTML)
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What seems good and bad about HTML?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What tricks do you have for remembering how to write HTML?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong><a href="../tutorials/how-to-push-to-github.md">Push to GitHub</a></strong>
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Submit link to your my-berkshire-site.html</strong>
+</label></li>
+</ul>
+<hr>
+<p><strong><a href="https://devbootcamp.instructure.com/courses/23/quizzes/838?module_item_id=14866">Week 2 Peer Pairing Form 1</a></strong></p>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Rate your pair on <a href="http://feedback.devbootcamp.com/">Feedbackinator</a></strong> (copy the text of your feedback to your clipboard)
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Rate 4-8 submissions/reflections on <a href="http://feedback.devbootcamp.com/">Feedbackinator</a></strong>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Take the feedback quiz</strong>
+</label></li>
+</ul>
+<hr>
+<p><strong><a href="https://devbootcamp.instructure.com/courses/23/assignments/2833?module_item_id=14867">2.7 Blog Setup - Mandatory Pairing Challenge</a></strong></p>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Create wireframe for your blog posts</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Save as [username].github.io/imgs/wireframe-blogs.png</strong>
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Create HTML version of your wireframe</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Save as [username].github.io/blog/blog-template.html</strong>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Add reflection in commented section
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Reflection</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   How was it to wireframe and create an HTML page with a pair?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Did you find wireframing to be helpful to your development process?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What did you and your pair decide made a good wireframe?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What new semantic elements did you learn about (if any)?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Include a link to your wireframe-blogs.png
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong><a href="../tutorials/how-to-push-to-github.md">Push to GitHub</a></strong>
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Submit link to your blog-template.html</strong>
+</label></li>
+</ul>
+<hr>
+<p><strong><a href="https://devbootcamp.instructure.com/courses/23/quizzes/838?module_item_id=14866">Week 2 Peer Pairing Form 2</a></strong></p>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Rate your pair on <a href="http://feedback.devbootcamp.com/">Feedbackinator</a></strong> (copy the text of your feedback to your clipboard)
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Rate 4-8 submissions/reflections on <a href="http://feedback.devbootcamp.com/">Feedbackinator</a></strong>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Take the feedback quiz</strong>
+</label></li>
+</ul>
+<hr>
+<p><strong><a href="https://devbootcamp.instructure.com/courses/23/assignments/2835?module_item_id=14870">2.8 Your Website, part 2 - Solo Challenge</a></strong></p>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   **Review your wireframes. Update if you think necessary.
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>[Create color</strong> scheme](<a href="https://kuler.adobe.com/create/color-wheel/">https://kuler.adobe.com/create/color-wheel/</a>)
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong><a href="https://www.google.com/fonts">Select Fonts</a></strong>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Create HTML version of your wireframe-index.png</strong>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Create HTML version of your</strong> wireframe-blog-index.png
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong><a href="../tutorials/how-to-push-to-github.md">Push to GitHub</a></strong>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong><a href="https://devbootcamp.instructure.com/courses/23/assignments/2834?module_item_id=14871">Submit your reflection</a></strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Include a link to your index.html, and your blog/index.html
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   How was your experience translating a wireframe into HTML?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What new tricks or elements did you learn about in HTML?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Are you excited to start incorporating the design you chose next week?
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Additional Resources</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://learn.shayhowe.com/">An Advanced Guide to HTML and CSS</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="https://gist.github.com/jenmyers/7354863">Design resources for developers</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://code.tutsplus.com/articles/10-hand-picked-tutorials-for-beginning-web-designers--net-9341">10 tutorials for beginning web designers</a>
+</label></li>
+</ul></li>
+</ul>
+<hr>
+<p><strong><a href="https://devbootcamp.instructure.com/courses/23/assignments/2836?module_item_id=14873">GPS 1.1 - Version Control and Git</a></strong></p>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Run through the GPS challenge with your pair</strong>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Reflection</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What git concepts were you struggling with prior to the GPS session?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What concepts were clarified during the GPS?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What questions did you ask your pair and the guide?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   What still confuses you about git?
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   How was your first experience of pairing in a GPS?
+</label></li>
+</ul></li>
+</ul>
+<hr>
+<p><strong><a href="https://devbootcamp.instructure.com/courses/23/discussion_topics/1731?module_item_id=14878">Week 2: Accountability Group</a></strong></p>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Make 1 post in the discussion</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Discuss 1-2 concepts you struggled with this week
+</label></li>
+</ul></li>
+</ul>
+<hr>
+<p><strong><a href="https://devbootcamp.instructure.com/courses/23/quizzes/837?module_item_id=14880">Week 2 Quiz</a></strong></p>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Take the quiz</strong>
+</label></li>
+</ul>
+<hr>
+<p><strong><a href="https://devbootcamp.instructure.com/courses/23/quizzes/835?module_item_id=14881">End of Week 2 Feedback</a></strong></p>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Take feedback survey</strong>
+</label></li>
+</ul>
+<hr>
+<p><strong><a href="https://devbootcamp.instructure.com/courses/23/assignments/2838?module_item_id=14883">Responsive Web Design (Bonus)</a></strong></p>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Required Reading</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://blog.teamtreehouse.com/beginners-guide-to-responsive-web-design">Beginners guide to responsive web design</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://ux.stackexchange.com/questions/24406/what-is-the-exact-difference-between-fluid-and-responsive-design">UXer asks the difference between fluid and responsive design</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://www.creativebloq.com/css3/create-fluid-layouts-html5-and-css3-3142768">Fluid layout project</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://liquidapsive.com/">Liquidapsive</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="https://developer.chrome.com/devtools/docs/mobile-emulation">Chrome mobile emulation</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries">MDN docs on media queries</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://mediaqueri.es/">mediaqueri.es</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://alistapart.com/article/responsive-web-design">alistapart on media queries</a>
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Make <a href="https://github.com/Devbootcamp/phase-0-code/tree/master/week-2/BONUS-Challenge/responsive-design">these files</a> responsive</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Save as index.html</strong>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Change static pixel dimensions to percentages
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Move navigation links (Home, Profile, Stuff, Pictures) from sidebar to top bar under header
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Optimize picture width for smaller screen sizes. We should be able to see the whole picture and not scroll
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Make the text centered and with good spacing on either side to facilitate reading on the mobile screen
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Make the title HEADER fit smaller screens
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Reflection</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   Reflect on your learning in the reflection div on your site
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Add all of these new files to your github.io site</strong>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Additional Resources</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://teamtreehouse.com/library/build-a-responsive-website">Treehouse: Build a Responsive Website</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://www.creativebloq.com/netmag/16-really-useful-responsive-design-tutorials-71410085">16 Really useful responsive design tutorials</a>
+</label></li>
+</ul></li>
+</ul>
+<hr>
+<p><strong><a href="">Mood Board (Bonus)</a></strong></p>
+<ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Required Reading</strong>
+
+</label><ul>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://www.onextrapixel.com/2012/02/10/mood-boarding-methods-for-web-designers/">Mood Boarding Methods for Web Designers</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://www.protofuse.com/blog/how-web-design-mood-board-impacts-ux/">How a Web Design Mood board impacts User Experience</a>
+</label></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <a href="http://www.creatively-driven.com/the-art-of-the-mood-board/">The Art of: The Mood Board</a>
+</label></li>
+</ul></li>
+<li><label>
+  <input type="checkbox" class="task-list-item-checkbox">
+   <strong>Create a mood board</strong>
+</label></li>
+</ul>
+<hr></body>
+</html>
